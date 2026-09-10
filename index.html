@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omega Rigworks | For Studio & Stage</title>
+  <meta name="description" content="Bidirectional MIDI orchestration and scene synchronization for MIDI controllers, audio devices, DAWs, and plug-ins.">
+  <style>
+    :root {
+      --bg: #0d0f12;
+      --card-bg: #15181e;
+      --border: #232832;
+      --text: #e2e8f0;
+      --text-muted: #8492a6;
+      --accent: #e5a93c; /* subtle amber / hardware indicator */
+      --accent-glow: rgba(229, 169, 60, 0.15);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 640px;
+      width: 100%;
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-glow);
+      border: 1px solid rgba(229, 169, 60, 0.3);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 24px;
+    }
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--accent);
+    }
+    h1 {
+      font-size: clamp(2.25rem, 5vw, 3.25rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .tagline {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 36px;
+      text-align: left;
+    }
+    .card h2 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .feature-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      font-size: 0.95rem;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .feature-list li::before {
+      content: "•";
+      color: var(--accent);
+      font-size: 1.2rem;
+    }
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      color: #000000;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .links {
+      display: flex;
+      gap: 20px;
+      margin-top: 12px;
+      font-size: 0.9rem;
+    }
+    .links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .links a:hover {
+      color: var(--text);
+    }
+    footer {
+      margin-top: 48px;
+      font-size: 0.8rem;
+      color: #4a5568;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">
+      <span class="status-dot"></span> In Active Development
+    </div>
+
+    <h1>Omega Rigworks</h1>
+    <div class="tagline">For Studio &amp; Stage</div>
+
+    <p>
+      Bidirectional MIDI orchestration and scene synchronization bridging MIDI controllers, audio devices, DAWs, and plug-ins.
+    </p>
+
+    <div class="card">
+      <h2>Core Architecture</h2>
+      <ul class="feature-list">
+        <li>State synchronization between hardware controllers and DAW sessions</li>
+        <li>Hybrid native runtime for low-latency CoreMIDI routing and file I/O</li>
+        <li>Deterministic preset, scene, and patch coordination across studio and live setups</li>
+      </ul>
+    </div>
+
+    <div class="actions">
+      <a class="btn" href="mailto:info@omegarigworks.com?subject=Omega%20Rigworks%20Inquiry">Contact Engineering</a>
+      <div class="links">
+        <a href="https://x.com/omegarigworks" target="_blank" rel="noopener">X</a>
+        <a href="https://youtube.com/@OmegaRigworks" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://instagram.com/omegarigworks" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://github.com/omegarigworks" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+
+    <footer>
+      &copy; Omega Rigworks. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
