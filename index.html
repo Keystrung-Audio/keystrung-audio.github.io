@@ -80,6 +80,25 @@
       line-height: 1.6;
       margin-bottom: 36px;
     }
+    .logo-container {
+      margin: 16px auto 28px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .brand-logo {
+      width: 100%;
+      max-width: 380px; /* Adjust scale to taste */
+      height: auto;
+      display: block;
+      /* Flips black strokes & text to clean white for dark mode: */
+      filter: invert(1) brightness(1.1);
+      transition: transform 0.25s ease;
+    }
+    .brand-logo:hover {
+      transform: scale(1.02);
+    }
     .card {
       background: var(--card-bg);
       border: 1px solid var(--border);
@@ -160,13 +179,21 @@
       <span class="status-dot"></span> In Active Development
     </div>
 
-    <h1>Omega Rigworks</h1>
+    <div class="logo-container">
+      <img src="logo.png" alt="Omega Rigworks" class="brand-logo">
+    </div>
+
+    <!-- Hidden from visual display to avoid duplicate text, but kept for SEO -->
+    <h1 style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0);">
+      Omega Rigworks
+    </h1>
+
     <div class="tagline">For Studio &amp; Stage</div>
 
     <p>
-      Bidirectional MIDI orchestration and scene synchronization bridging MIDI controllers, audio devices, DAWs, and plug-ins.
+      Bidirectional MIDI orchestration and scene synchronization bridging Morningstar controllers, studio hardware, and Logic Pro.
     </p>
-
+    
     <div class="card">
       <h2>Core Architecture</h2>
       <ul class="feature-list">
