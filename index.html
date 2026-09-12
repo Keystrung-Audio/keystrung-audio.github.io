@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/png" href="keystrung_favicon_512x512.png">
-<link rel="apple-touch-icon" href="keystrung_favicon_512x512.png">
-  <!-- Open Graph / Link Preview Thumbnail -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Keystrung Audio | For Studio & Stage">
-<meta property="og:description" content="Bidirectional MIDI orchestration and scene synchronization for Morningstar controllers, hardware, and Logic Pro.">
-<meta property="og:image" content="https://keystrung.com/keystrung_favicon_512x512.png">
-<meta property="og:url" content="https://keystrung.com">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Keystrung Audio">
-<meta name="twitter:description" content="Bidirectional MIDI orchestration and scene synchronization for Morningstar controllers, hardware, and Logic Pro.">
-<meta name="twitter:image" content="https://keystrung.com/keystrung_favicon_512x512.png">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keystrung Audio | For Studio & Stage</title>
-  <meta name="description" content="Bidirectional MIDI orchestration and scene synchronization for MIDI controllers, audio devices, DAWs, and plug-ins.">
+  <title>Keystrung Audio | For Studio &amp; Stage</title>
+  <meta name="description" content="A little keyed up. A little high-strung. Obsessively in sync. Bidirectional MIDI orchestration and scene synchronization for pedalboards, synths, and DAWs.">
+
+  <link rel="icon" type="image/png" href="keystrung_favicon_512x512.png">
+  <link rel="apple-touch-icon" href="keystrung_favicon_512x512.png">
+
+  <!-- Open Graph / Link Preview Thumbnail -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Keystrung Audio | For Studio &amp; Stage">
+  <meta property="og:description" content="A little keyed up. A little high-strung. Obsessively in sync. Modern systems bridging pedalboards, synths, and DAWs.">
+  <meta property="og:image" content="https://keystrung.com/keystrung_favicon_512x512.png">
+  <meta property="og:url" content="https://keystrung.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Keystrung Audio">
+  <meta name="twitter:description" content="A little keyed up. A little high-strung. Obsessively in sync. Modern systems bridging pedalboards, synths, and DAWs.">
+  <meta name="twitter:image" content="https://keystrung.com/keystrung_favicon_512x512.png">
+
   <style>
     :root {
       --bg: #0d0f12;
@@ -82,18 +84,25 @@
       margin-bottom: 8px;
     }
     .tagline {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .lead {
       font-size: 1.15rem;
       font-weight: 500;
-      color: var(--accent);
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
+      color: #ffffff;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
     }
     p {
       color: var(--text-muted);
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       line-height: 1.6;
-      margin-bottom: 36px;
+      margin-bottom: 32px;
     }
     .logo-container {
       margin: 16px auto 28px auto;
@@ -104,10 +113,9 @@
     }
     .brand-logo {
       width: 100%;
-      max-width: 380px; /* Adjust scale to taste */
+      max-width: 380px;
       height: auto;
       display: block;
-      /* Flips black strokes & text to clean white for dark mode: */
       filter: invert(1) brightness(1.1);
       transition: transform 0.25s ease;
     }
@@ -123,27 +131,28 @@
       text-align: left;
     }
     .card h2 {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--text-muted);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
     .feature-list {
       list-style: none;
       display: grid;
-      gap: 10px;
+      gap: 12px;
       font-size: 0.95rem;
     }
     .feature-list li {
       display: flex;
-      align-items: center;
-      gap: 8px;
+      align-items: baseline;
+      gap: 10px;
     }
     .feature-list li::before {
       content: "•";
       color: var(--accent);
       font-size: 1.2rem;
+      line-height: 1;
     }
     .actions {
       display: flex;
@@ -162,10 +171,11 @@
       padding: 12px 28px;
       border-radius: 8px;
       text-decoration: none;
-      transition: opacity 0.2s ease;
+      transition: opacity 0.2s ease, transform 0.15s ease;
     }
     .btn:hover {
       opacity: 0.9;
+      transform: translateY(-1px);
     }
     .links {
       display: flex;
@@ -198,32 +208,34 @@
       <img src="keystrung_logo_large.png" alt="Keystrung Audio" class="brand-logo">
     </div>
 
-    <!-- Hidden from visual display to avoid duplicate text, but kept for SEO -->
+    <!-- Hidden visually to prevent duplicate text, kept for search crawlers -->
     <h1 style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0);">
       Keystrung Audio
     </h1>
 
     <div class="tagline">For Studio &amp; Stage</div>
 
+    <div class="lead">A little keyed up. A little high-strung. Obsessively in sync.</div>
+
     <p>
-      Bidirectional MIDI orchestration and scene synchronization bridging Morningstar controllers, studio hardware, and Logic Pro.
+      Bidirectional MIDI orchestration and deterministic preset synchronization bridging hardware controllers, synthesizers, pedalboards, and DAWs.
     </p>
     
     <div class="card">
-      <h2>Core Architecture</h2>
+      <h2>System Capabilities</h2>
       <ul class="feature-list">
-        <li>State synchronization between hardware controllers and DAW sessions</li>
-        <li>Hybrid native runtime for low-latency CoreMIDI routing and file I/O</li>
-        <li>Deterministic preset, scene, and patch coordination across studio and live setups</li>
+        <li>Real-time bidirectional state sync between hardware controllers and DAW sessions</li>
+        <li>Low-latency MIDI routing and automated preset switching for live performance</li>
+        <li>Deterministic scene, patch, and routing recall across hybrid studio rigs</li>
       </ul>
     </div>
 
     <div class="actions">
-      <a class="btn" href="mailto:info@keystrung.com?subject=keystrung%20audio%20Inquiry">Contact Engineering</a>
+      <a class="btn" href="mailto:info@keystrung.com?subject=Keystrung%20Audio%20Inquiry">Get in Touch</a>
       <div class="links">
-        <a href="https://x.com/keystrung" target="_blank" rel="noopener">X</a>
-        <a href="https://youtube.com/@keystrung" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://instagram.com/keystrung" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/keystrungaudio" target="_blank" rel="noopener">X</a>
+        <a href="https://youtube.com/@keystrungaudio" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://instagram.com/keystrungaudio" target="_blank" rel="noopener">Instagram</a>
         <a href="https://github.com/keystrung" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
